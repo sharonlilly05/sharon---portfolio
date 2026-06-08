@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name • Portfolio</title>
+    <meta name="description" content="A polished portfolio for a Junior Cloud & DevOps enthusiast." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Sharon</div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Cloud & DevOps Portfolio</span>
+          <h1>Hi, I’m <strong>Sharon</strong></h1>
+          <p>
+            I build reliable cloud-native apps, automate deployments, and secure static sites with modern CDN architecture.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="hero-graphic" aria-hidden="true">
+            <div class="hero-blob"></div>
+            <div class="hero-graphic-card">
+              <span class="hero-chip">Live Cloud Portfolio</span>
+              <h3>Secure site delivery with AWS</h3>
+              <p>
+                A crisp, modern static page designed for fast performance and secure HTTPS delivery through CDN.
+              </p>
+            </div>
+          </div>
+          <div class="panel-card">
+            <h2>Featured Skills</h2>
+            <ul>
+              <li>AWS S3 + CloudFront</li>
+              <li>Static site hosting</li>
+              <li>CI/CD automation</li>
+              <li>Infrastructure as Code</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="section-heading">
+          <span class="section-label">Projects</span>
+          <h2>Recent Work</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Cloud Portfolio</h3>
+            <p>Static site hosted on AWS S3 and served through CloudFront with HTTPS.</p>
+            <span>Tech: HTML, CSS, AWS S3, CloudFront</span>
+          </article>
+          <article class="project-card">
+            <h3>Containerized CI Workflow</h3>
+            <p>Automated Docker build pipeline with repeatable deployment steps.</p>
+            <span>Tech: Docker, GitHub Actions</span>
+          </article>
+          <article class="project-card">
+            <h3>Infrastructure Automation</h3>
+            <p>Cloud infrastructure defined with reusable templates for fast provisioning.</p>
+            <span>Tech: Terraform, AWS</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="section-heading">
+          <span class="section-label">About</span>
+          <h2>Who I am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I’m a motivated junior Cloud & DevOps enthusiast focused on building resilient, scalable static websites and infrastructure. I enjoy turning simple ideas into production-ready deployments using AWS and automation tools.
+            </p>
+            <p>
+              My goal is to deliver clean, secure solutions that are easy to maintain and fast to serve. I’m learning continuously and adapting modern best practices for deployment, monitoring, and performance.
+            </p>
+          </div>
+          <div class="skills-panel">
+            <h3>Core strengths</h3>
+            <ul>
+              <li>Static website hosting</li>
+              <li>HTTPS via CloudFront</li>
+              <li>Bucket policy and permissions</li>
+              <li>Responsive UI and accessibility</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div>
+        <h2>Let’s build something together</h2>
+        <p>
+          Email me at <a href="mailto:sharon@example.com">sharon@example.com</a> to discuss your next cloud-native project.
+        </p>
+      </div>
+      <p class="footer-note">© 2026 Sharon • Built for AWS S3 + CloudFront hosting</p>
+    </footer>
+
+    <script>
+      const menuButton = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.site-nav');
+      menuButton.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
