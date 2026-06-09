@@ -1,12 +1,12 @@
 :root {
-  --bg: linear-gradient(135deg, #0f172a 0%, #0b3d91 48%, #3b82f6 100%);
-  --surface: rgba(255, 255, 255, 0.1);
-  --surface-strong: rgba(255, 255, 255, 0.18);
-  --text: #eef2ff;
-  --muted: #cbd5e1;
-  --accent: #7dd3fc;
-  --border: rgba(255, 255, 255, 0.12);
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.16);
+  --bg: linear-gradient(135deg, #230046 0%, #7b2ff7 45%, #d88ad8 100%);
+  --surface: rgba(255, 255, 255, 0.12);
+  --surface-strong: rgba(255, 255, 255, 0.2);
+  --text: #fbf7ff;
+  --muted: #e8d3ff;
+  --accent: #f4b6f9;
+  --border: rgba(255, 255, 255, 0.16);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.2);
   font-family: 'Inter', system-ui, sans-serif;
 }
 
@@ -346,6 +346,8 @@ body::after {
   padding: 2.5rem 2rem 3rem;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
 }
 
 .site-footer h2 {
